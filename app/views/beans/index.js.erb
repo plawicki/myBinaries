@@ -1,0 +1,7 @@
+$('#my-beans').append('<%= j render @beans %>');
+<% if @beans.next_page %>
+  $('.pagination').replaceWith('<%= j will_paginate @beans %>');
+<% else %>
+  $(window).off('scroll');
+  $('.pagination').remove();
+<% end %>
