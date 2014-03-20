@@ -1,6 +1,6 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #FAFAFA;
+  color: #6E6E6E;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 18px;
   line-height: 18px;
@@ -10,6 +10,95 @@ p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
  
   line-height: 18px;
+}
+
+#pageContent
+{
+  margin-top: 10%;
+}
+
+.field *
+{
+  color: #6E6E6E;
+  border-color: silver;
+}
+
+
+.newBean
+{
+  text-align: center;
+
+}
+
+.highlight pre
+{
+  background-color: #E6E6E6;
+  border-radius: 25px;
+}
+
+
+.pagination
+{
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+table
+{
+
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  text-align: center;
+
+}
+td
+{
+  max-width: auto;
+  padding: 2px 2px 2px 2px;
+
+}
+h1, h2, h3
+{
+  text-align: center;
+  color: #FAAC58;
+  font-size: 56px;
+}
+
+
+#secondaryContent
+{
+  position: fixed;
+  background-color: #FAAC58;
+  padding-left: 5%;
+  color: white;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  margin-top: -10%;
+}
+
+#secondaryContent a
+{
+  color: white;
+}
+
+.notice, .alert
+{
+  margin-top: 10%;
+  color: red;
+  font-size: 27px;
+  text-align: center;
+
+
+  background-color: white;
+}
+.notice {
+  color: green;
+}
+
+.new_user
+{
+  text-align: center;
 }
 
 pre {
@@ -38,12 +127,10 @@ a {
 div {
   &.field, &.actions {
     margin-bottom: 10px;
+    text-align: center;
   }
 }
 
-#notice {
-  color: green;
-}
 
 .field_with_errors {
   padding: 2px;
@@ -72,4 +159,20 @@ div {
     font-size: 12px;
     list-style: square;
   }
+}
+
+.newBean a
+{
+  text-decoration: none;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  background-color: #FAAC58;
+  border: 1px solid #FAAC58;
+  border-radius: 10px;
+}
+
+.actions *
+{
+  color: #6E6E6E;
+
 }
