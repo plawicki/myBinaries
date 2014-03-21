@@ -1,0 +1,257 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/*
+  Place all the styles related to the matching controller here.
+  They will automatically be included in application.css.
+*/
+
+.hll { background-color: #ffffcc }
+.c { color: #888888 } /* Comment */
+.err { color: #FF0000; background-color: #FFAAAA } /* Error */
+.k { color: #008800; font-weight: bold } /* Keyword */
+.o { color: #333333 } /* Operator */
+.cm { color: #888888 } /* Comment.Multiline */
+.cp { color: #557799 } /* Comment.Preproc */
+.c1 { color: #888888 } /* Comment.Single */
+.cs { color: #cc0000; font-weight: bold } /* Comment.Special */
+.gd { color: #A00000 } /* Generic.Deleted */
+.ge { font-style: italic } /* Generic.Emph */
+.gr { color: #FF0000 } /* Generic.Error */
+.gh { color: #000080; font-weight: bold } /* Generic.Heading */
+.gi { color: #00A000 } /* Generic.Inserted */
+.go { color: #888888 } /* Generic.Output */
+.gp { color: #c65d09; font-weight: bold } /* Generic.Prompt */
+.gs { font-weight: bold } /* Generic.Strong */
+.gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+.gt { color: #0044DD } /* Generic.Traceback */
+.kc { color: #008800; font-weight: bold } /* Keyword.Constant */
+.kd { color: #008800; font-weight: bold } /* Keyword.Declaration */
+.kn { color: #008800; font-weight: bold } /* Keyword.Namespace */
+.kp { color: #003388; font-weight: bold } /* Keyword.Pseudo */
+.kr { color: #008800; font-weight: bold } /* Keyword.Reserved */
+.kt { color: #333399; font-weight: bold } /* Keyword.Type */
+.m { color: #6600EE; font-weight: bold } /* Literal.Number */
+.s { background-color: #fff0f0 } /* Literal.String */
+.na { color: #0000CC } /* Name.Attribute */
+.nb { color: #007020 } /* Name.Builtin */
+.nc { color: #BB0066; font-weight: bold } /* Name.Class */
+.no { color: #003366; font-weight: bold } /* Name.Constant */
+.nd { color: #555555; font-weight: bold } /* Name.Decorator */
+.ni { color: #880000; font-weight: bold } /* Name.Entity */
+.ne { color: #FF0000; font-weight: bold } /* Name.Exception */
+.nf { color: #0066BB; font-weight: bold } /* Name.Function */
+.nl { color: #997700; font-weight: bold } /* Name.Label */
+.nn { color: #0e84b5; font-weight: bold } /* Name.Namespace */
+.nt { color: #007700 } /* Name.Tag */
+.nv { color: #996633 } /* Name.Variable */
+.ow { color: #000000; font-weight: bold } /* Operator.Word */
+.w { color: #bbbbbb } /* Text.Whitespace */
+.mf { color: #6600EE; font-weight: bold } /* Literal.Number.Float */
+.mh { color: #005588; font-weight: bold } /* Literal.Number.Hex */
+.mi { color: #0000DD; font-weight: bold } /* Literal.Number.Integer */
+.mo { color: #4400EE; font-weight: bold } /* Literal.Number.Oct */
+.sb { background-color: #fff0f0 } /* Literal.String.Backtick */
+.sc { color: #0044DD } /* Literal.String.Char */
+.sd { color: #DD4422 } /* Literal.String.Doc */
+.s2 { background-color: #fff0f0 } /* Literal.String.Double */
+.se { color: #666666; font-weight: bold; background-color: #fff0f0 } /* Literal.String.Escape */
+.sh { background-color: #fff0f0 } /* Literal.String.Heredoc */
+.si { background-color: #eeeeee } /* Literal.String.Interpol */
+.sx { color: #DD2200; background-color: #fff0f0 } /* Literal.String.Other */
+.sr { color: #000000; background-color: #fff0ff } /* Literal.String.Regex */
+.s1 { background-color: #fff0f0 } /* Literal.String.Single */
+.ss { color: #AA6600 } /* Literal.String.Symbol */
+.bp { color: #007020 } /* Name.Builtin.Pseudo */
+.vc { color: #336699 } /* Name.Variable.Class */
+.vg { color: #dd7700; font-weight: bold } /* Name.Variable.Global */
+.vi { color: #3333BB } /* Name.Variable.Instance */
+.il { color: #0000DD; font-weight: bold } /* Literal.Number.Integer.Long *//* line 1, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+body {
+  background-color: #FAFAFA;
+  color: #6E6E6E;
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+/* line 9, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+p, ol, ul, td {
+  font-family: verdana, arial, helvetica, sans-serif;
+  line-height: 18px;
+}
+
+/* line 16, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+#pageContent {
+  margin-top: 10%;
+}
+
+/* line 21, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+.field * {
+  color: #6E6E6E;
+  border-color: silver;
+}
+
+/* line 28, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+.newBean {
+  text-align: center;
+}
+
+/* line 34, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+.highlight pre {
+  background-color: #E6E6E6;
+  border-radius: 25px;
+}
+
+/* line 41, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+.pagination {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+/* line 47, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+table {
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+/* line 54, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+td {
+  max-width: auto;
+  padding: 2px 2px 2px 2px;
+}
+
+/* line 60, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+h1, h2, h3 {
+  text-align: center;
+  color: #FAAC58;
+  font-size: 56px;
+}
+
+/* line 68, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+#secondaryContent {
+  position: fixed;
+  background-color: #FAAC58;
+  padding-left: 5%;
+  color: white;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+  margin-top: -10%;
+}
+
+/* line 79, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+#secondaryContent a {
+  color: white;
+}
+
+/* line 84, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+.notice, .alert {
+  margin-top: 10%;
+  color: red;
+  font-size: 27px;
+  text-align: center;
+  background-color: white;
+}
+
+/* line 93, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+.notice {
+  color: green;
+}
+
+/* line 98, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+.new_user {
+  text-align: center;
+}
+
+/* line 102, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 18px;
+}
+
+/* line 109, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+#bean_snippet {
+  min-width: 400px;
+  min-height: 300px;
+}
+
+/* line 114, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+a {
+  color: #000;
+}
+/* line 116, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+a:visited {
+  color: #666;
+}
+/* line 119, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+a:hover {
+  color: #fff;
+  background-color: #000;
+}
+
+/* line 126, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+div.field, div.actions {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* line 133, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+.field_with_errors {
+  padding: 2px;
+  background-color: red;
+  display: table;
+}
+
+/* line 139, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+/* line 146, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #c00;
+  color: #fff;
+}
+/* line 156, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square;
+}
+
+/* line 163, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+.newBean a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 5px 5px 5px;
+  background-color: #FAAC58;
+  border: 1px solid #FAAC58;
+  border-radius: 10px;
+}
+
+/* line 173, /home/patryk/Sites/ruby/myBeans/app/assets/stylesheets/scaffolds.css.scss */
+.actions * {
+  color: #6E6E6E;
+}

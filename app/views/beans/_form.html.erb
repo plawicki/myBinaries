@@ -13,7 +13,9 @@
     </div>
   <% end %>
 
-  <% allowed = Pygments.lexers.flatten.unshift("first").select.with_index{|a,i| (i+1) % 2 == 0}.sort %>
+  <% allowed = Pygments.lexers.flatten.unshift("first").select.with_index{|a,i| (i+1) % 2 == 0}.sort 
+    allowed = allowed.delete_if { |a| a =~ /.\s./ }
+  %>
 
   <div class="field">
     <%= f.label :snippet %><br>
@@ -21,7 +23,7 @@
   </div>
   <div class="field">
     <%= f.label :lang %><br>
-    <%= f.select :lang, allowed.map { |e| e.downcase.delete(' ') } %>
+    <%= f.select :lang, allowed.map { |e| e.downcase } %>
   </div>
   <div class="field">
     <%= f.label :description %><br>
