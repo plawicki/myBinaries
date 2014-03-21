@@ -1,6 +1,6 @@
  
       <tr>
-        <td><style="text-align: left"><%= raw Pygments.highlight(bean.snippet, lexer: bean.lang) %></style></td>
+        <td><%= raw Pygments.highlight(bean.snippet, lexer: bean.lang) %></td>
         <td><%= bean.lang %></td>
         <td><%= bean.description %></td>
         <td><div class="newBean"><%= link_to 'Show', bean %>
