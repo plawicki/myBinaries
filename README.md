@@ -16,3 +16,11 @@ I use custom gems like:
 Project has also custom CSS written by me
 
 To generate posts use rake db:seed
+
+
+TO-DO:
+
+	* search option
+	* bootstrap
+	* after logging in switch to users codes
+	* infitnite scrolling!
