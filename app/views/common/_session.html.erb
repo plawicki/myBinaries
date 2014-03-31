@@ -8,13 +8,13 @@
 
 			<%= link_to "Sign out".html_safe, destroy_user_session_path, :method => :delete, :class => "btn btn-default navbar-btn" %>
 			<%= link_to "Home".html_safe, beans_path, :class => "btn btn-default navbar-btn" %>
-			<%= link_to "Find Beans".html_safe, beans_search_path, :class => "btn btn-default navbar-btn" %>
+			<%= link_to "Find".html_safe, beans_search_path, :class => "btn btn-default navbar-btn" %>
 
 		<%- else %>
 			<%= link_to "Home".html_safe, beans_path, :class => "btn btn-default navbar-btn" %>
 			<%= link_to "Register".html_safe, new_user_registration_path, :class => "btn btn-default navbar-btn" %>
 			<%= link_to "Sign in".html_safe, new_user_session_path, :class => "btn btn-default navbar-btn" %>
-			<%= link_to "Find Beans".html_safe, beans_search_path, :class => "btn btn-default navbar-btn" %>
+			<%= link_to "Find".html_safe, beans_search_path, :class => "btn btn-default navbar-btn" %>
 
 		<%- end %>
 	</div>

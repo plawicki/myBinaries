@@ -1,4 +1,4 @@
-<h1 class="visible-xs">Listing beanaries</h1>
+<h1 >Listing beanaries</h1>
 
 <%= link_to 'New Bean', new_bean_path %>
 <br/><br/>
@@ -20,7 +20,7 @@
   <%= render @beans %>
 
   </tbody>
-</div>
+
 </table>
 
 <%= paginate @beans %>
@@ -28,7 +28,7 @@
 
 
 
-<div id="loader">
+<div id="loader"></div>
 
 
 <br>

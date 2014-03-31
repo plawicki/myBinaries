@@ -6,7 +6,7 @@
 
 			<p class="navbar-text">Hello <%= current_user.email %></p><br />
 
-			<%= link_to "Sign out".html_safe, destroy_user_session_path, :method => :delete :class => "btn btn-default navbar-btn" %>
+			<%= link_to "Sign out".html_safe, destroy_user_session_path, :method => :delete, :class => "btn btn-default navbar-btn" %>
 			<%= link_to "Home".html_safe, beans_path, :class => "btn btn-default navbar-btn" %>
 			<%= link_to "Find Beans".html_safe, beans_search_path, :class => "btn btn-default navbar-btn" %>
 
