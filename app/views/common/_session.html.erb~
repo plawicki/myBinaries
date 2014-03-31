@@ -6,6 +6,5 @@
     <%= link_to 'Register', new_user_registration_path %> |
     <%= link_to 'Sign in', new_user_session_path %> |
     <%= link_to "Home", beans_path %>
-    <%= link_to 'Find Beans', beans_search_path %>
   </p>
 <%- end %>

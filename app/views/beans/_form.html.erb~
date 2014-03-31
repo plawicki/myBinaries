@@ -13,12 +13,7 @@
     </div>
   <% end %>
 
-<%
-	allowed = Pygments.lexers.flatten.select.with_index{|a,i| (i+1) % 2 == 0}
-	allowed = allowed.map{|a| a[:aliases][0]}
-	allowed = allowed.delete_if{|a| (/-cpp/ =~ a || /-objc/ =~ a)}
-	allowed = allowed.sort
-%>
+
 
   <div class="field">
     <%= f.label :snippet %><br>

@@ -1,0 +1,57 @@
+<%
+allowed = Pygments.lexers.flatten.select.with_index{|a,i| (i+1) % 2 == 0}
+allowed = allowed.map{|a| a[:aliases][0]}
+allowed = allowed.delete_if{|a| (/-cpp/ =~ a || /-objc/ =~ a)}
+allowed = allowed.sort
+%>
+
+ <form role="search">
+      
+      <div id="search">
+        <table><tr>
+          <td>Lang:</td>
+          <td><%= select_tag(:lang, options_for_select(allowed, params[:lang]))%></td>
+          </tr><tr>
+          <td>
+          Description:
+          </td><td>
+          <%= text_field_tag :desc, params[:desc] %><br>
+          </td> 
+        </tr>
+      </table>
+      </div> 
+
+      <div class="link3" id="search">
+      <%= submit_tag "Search", :snippet => nil %>
+      </div>
+  </form>
+
+<!-- if we find some results -->
+<% if(@beans.length > 0) %>
+<h3>Results</h3>
+<hr/>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Snippet</th>
+      <th>Lang</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+  </thead>
+
+   <tbody class="page">
+
+  <%= render @beans %>
+
+  </tbody>
+</table>
+<%= paginate @beans %>
+
+<div id="loader">
+</div>
+
+<% elsif(@beans.length == 0 && (params.has_key?(:lang) || params.has_key?(:desc))) %>
+<b>No results found.</b>
+<% end %>

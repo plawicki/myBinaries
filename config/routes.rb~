@@ -5,7 +5,7 @@ MyBeans::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-  get "beans/search"
+  get "gists/search"
 
   resources :beans
 
