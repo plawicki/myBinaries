@@ -28,7 +28,7 @@ class BeansController < ApplicationController
   # GET /gists/show
   def search
      @beans = Bean.search(params[:lang],params[:desc])
-     @beans = @beans.order(:created_at).page(params[:page])
+     @beans = Kaminari.paginate_array(@beans).page(params[:page])
   end
 
   # POST /beans

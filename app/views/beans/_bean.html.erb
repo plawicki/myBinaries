@@ -1,10 +1,10 @@
  
       <tr class="post">
-        <td><%= raw Pygments.highlight(bean.snippet, lexer: bean.lang) %></td>
-        <td><%= bean.lang %></td>
-        <td><%= bean.description %></td>
-        <td><div class="newBean"><%= link_to 'Show', bean %>
-        <% if user_signed_in? then %><%= link_to 'Edit', edit_bean_path(bean) %>
-        <%= link_to 'Destroy', bean, method: :delete, data: { confirm: 'Are you sure?' } %><% end %></div></td>
+        <td ><%= raw Pygments.highlight(bean.snippet.length > 20 ? bean.snippet[0,20] + "..." : bean.snippet, lexer: bean.lang) %></td>
+        <td class="hidden-xs"><%= bean.lang %></td>
+        <td class="hidden-xs"><%= bean.description %></td>
+        <td><%= link_to 'Show', bean, :class=>"hidden-xs" %>
+        <% if user_signed_in? then %><%= link_to 'Edit', edit_bean_path(bean), :class=>"hidden-xs" %>
+        <%= link_to 'Destroy', bean, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"hidden-xs" %><% end %></td>
       </tr>
    

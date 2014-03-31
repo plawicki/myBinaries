@@ -100,7 +100,7 @@ class BeansController < ApplicationController
       end
 
 
-      !good_lang
+      !good
     end
 
     def change_lang(gists)

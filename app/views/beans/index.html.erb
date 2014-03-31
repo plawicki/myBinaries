@@ -1,19 +1,20 @@
-<h1>Listing beanaries</h1>
+<h1 class="hidden-xs">Listing beanaries</h1>
 
-<div class="newBean"><br/><br/><%= link_to 'New Bean', new_bean_path %></div>
+<%= link_to 'New Bean', new_bean_path %>
 <br/><br/>
+
 
 <table class="table">
   <thead>
     <tr>
       <th>Snippet</th>
-      <th>Lang</th>
-      <th>Description</th>
-      <th>Actions</th>
+      <th class="hidden-xs">Lang</th>
+      <th class="hidden-xs">Description</th>
+      <th class="hidden-xs">Actions</th>
 
     </tr>
   </thead>
-<div class="my-beans">
+
   <tbody class="page">
 
   <%= render @beans %>
@@ -24,10 +25,12 @@
 
 <%= paginate @beans %>
 
-<div class="center">
+
+
+
 <div id="loader">
-</div>
-</div>
+
+
 <br>
 
 

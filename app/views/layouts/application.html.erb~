@@ -8,20 +8,14 @@
 </head>
 <body>
 
-
-
-<div id="secondaryContent">
-	
     <%= render 'common/session' %>
-
-  </div>
 
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
 
-<div id="pageContent">
+
 	<%= yield %>
-</div>
+
 
 
 </body>
