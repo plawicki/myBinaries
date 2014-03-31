@@ -22,7 +22,7 @@
 </div>
 </table>
 
-<%= paginate @beans %>
+<%= paginate @posts %>
 
 
 <div id="loader">

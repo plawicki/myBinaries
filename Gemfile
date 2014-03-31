@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.3'
+gem 'rails', '4.0.4'
 
 # Use sqlite3 as the database for Active Record
 group :development do
@@ -10,12 +10,14 @@ end
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
+gem 'bootstrap-sass'
 
 gem 'pygments.rb'
 gem 'redcarpet'
 gem 'quiet_assets'
 gem 'kaminari'
-# gem 'bootstrap-kaminari-views'
+
+gem 'bootstrap-kaminari-views'
 gem 'attribute-defaults'
 gem 'devise'
 

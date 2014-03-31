@@ -1,0 +1,36 @@
+<div class="newBean">
+
+<%= form_for(@bean) do |f| %>
+  <% if @bean.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bean.errors.count, "error") %> prohibited this bean from being saved:</h2>
+
+      <ul>
+      <% @bean.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <% allowed = Pygments.lexers.flatten.unshift("first").select.with_index{|a,i| (i+1) % 2 == 0}.sort 
+    allowed = allowed.delete_if { |a| a =~ /.\s./ }
+  %>
+
+  <div class="field">
+    <%= f.label :snippet %><br>
+    <%= f.text_area :snippet %>
+  </div>
+  <div class="field">
+    <%= f.label :lang %><br>
+    <%= f.select :lang, allowed.map { |e| e.downcase } %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br>
+    <%= f.text_field :description %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
+</div>

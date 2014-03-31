@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Snippet:</strong>
+  <%= raw Pygments.highlight(@bean.snippet, lexer: @bean.lang) %>
+</p>
+
+<p>
+  <strong>Lang:</strong>
+  <%= @bean.lang %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @bean.description %>
+</p>
+
+<%= link_to 'Edit', edit_bean_path(@bean) %> |
+<%= link_to 'Back', beans_path %>
