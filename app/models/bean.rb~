@@ -1,4 +1,4 @@
 class Bean < ActiveRecord::Base
 	attr_default :lang, "ruby"
-
+	self.per_page = 10
 end

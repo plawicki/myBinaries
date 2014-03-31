@@ -1,5 +1,5 @@
  
-      <tr class="post">
+      <tr>
         <td><%= raw Pygments.highlight(bean.snippet, lexer: bean.lang) %></td>
         <td><%= bean.lang %></td>
         <td><%= bean.description %></td>

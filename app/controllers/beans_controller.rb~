@@ -9,6 +9,7 @@ class BeansController < ApplicationController
   def index
     @beans = Bean.order(:created_at).page(params[:page])
 
+end
   end
 
   # GET /beans/1
