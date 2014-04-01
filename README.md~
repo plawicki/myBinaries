@@ -31,4 +31,4 @@ Detale
 	* bootstrap dodany za pomocą gema
 	* zostały zaimplementowane wszystkie wymagania TO-DO
 	* widok jest responsywny, z opcją nieskończonego przewijania w razie korzystania za javascript (w przeciwnym wypadku paginacja kaminari)
-	* wyszukiwanie na osobnej stronie po języku i opisie z działającym nieskończonym przewijaniem
+	* wyszukiwanie na osobnej stronie z działającym nieskończonym przewijaniem
