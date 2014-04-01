@@ -5,7 +5,7 @@ Jest to projekt Ruby on Rails. Projek ten jest rozwiniętą wersją "myGists"
 
 Demo
 =======
-
+[Hosted by Heroku](http://mybeanaries.herokuapp.com)
 
 Funkcjonalność dodatkowa
 =======
