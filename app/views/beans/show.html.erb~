@@ -2,10 +2,10 @@
 
 <p>
   <strong>Snippet:</strong>
-
+</div>
   <%= raw Pygments.highlight(@bean.snippet, lexer: @bean.lang) %>
 </p>
-
+<div class="pageContent">
 <p>
   <strong>Lang:</strong>
   <%= @bean.lang %>

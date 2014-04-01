@@ -8,7 +8,7 @@
 	<form role="search">
 	      
 	     
-		<table align="center">
+		<table class="findForm">
 			<tr>
 		  		<td>Lang:</td>
 		  		<td><%= select_tag(:lang, options_for_select(allowed, params[:lang]))%></td>
@@ -31,7 +31,7 @@
 
 	<!-- if we find some results -->
 	<% if(@beans.length > 0) %>
-	<h3>Results</h3>
+	<h1>Results</h1>
 	<hr/>
 
 	<table class="table">
@@ -56,5 +56,5 @@
 	</div>
 
 	<% elsif(@beans.length == 0 && (params.has_key?(:lang) || params.has_key?(:desc))) %>
-	<b>No results found.</b>
+	<br/><br/><b>No results found.</b>
 	<% end %>
