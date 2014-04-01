@@ -33,5 +33,5 @@ Detale
 	* widok jest responsywny, z opcją nieskończonego przewijania w razie korzystania za javascript (w przeciwnym wypadku paginacja kaminari)
 	* wyszukiwanie na osobnej stronie po języku i opisie z działającym nieskończonym przewijaniem
 	* użyta baza postgres
-	* ruby 2.1.1
+	* preferowane ruby >=2.1.0
 	* rails 4.0.4
