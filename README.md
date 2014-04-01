@@ -1,7 +1,7 @@
 My Beanaries
 =======
 
-Jest to projekt Ruby on Rails. Projek ten jest rozwiniętą wersją "myGists"
+Jest to projekt Ruby on Rails. Projek ten jest rozwiniętą wersją "myGists".
 
 Demo
 =======
@@ -32,3 +32,6 @@ Detale
 	* zostały zaimplementowane wszystkie wymagania TO-DO
 	* widok jest responsywny, z opcją nieskończonego przewijania w razie korzystania za javascript (w przeciwnym wypadku paginacja kaminari)
 	* wyszukiwanie na osobnej stronie po języku i opisie z działającym nieskończonym przewijaniem
+	* użyta baza postgres
+	* ruby 2.1.1
+	* rails 4.0.4
