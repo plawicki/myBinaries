@@ -1,4 +1,20 @@
 
+.pageContent
+{
+ 	margin-top: -100px;
+	text-align: center;
+}
+
+.findForm
+{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.desc
+{
+	max-width: 200px;
+}
 
 .higlight
 {
@@ -20,7 +36,8 @@ float: left;
 
 .notice, .alert
 {
-  margin-top: 10%;
+  margin-top: 200px;
+
   color: red;
   font-size: 27px;
   text-align: center;

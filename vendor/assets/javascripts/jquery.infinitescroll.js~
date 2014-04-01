@@ -33,7 +33,7 @@
             msg: null,
             msgText: "Loading",
             selector: "#loader",
-            speed: 'slow',
+            speed: 'fast',
             start: undefined
         },
         state: {
@@ -48,11 +48,11 @@
         debug: false,
 		behavior: undefined,
         binder: $(window), // used to cache the selector
-        nextSelector: "div.navigation a:last",
+        nextSelector: "div.navigation a:first",
         navSelector: "div.navigation",
         contentSelector: null, // rename to pageFragment
         extraScrollPx: 150,
-        itemSelector: "div.thumbnail",
+        itemSelector: "tr.post",
         animate: true,
         pathParse: undefined,
         dataType: 'html',

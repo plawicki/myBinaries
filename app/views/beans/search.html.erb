@@ -1,57 +1,60 @@
 <%
-allowed = Pygments.lexers.flatten.select.with_index{|a,i| (i+1) % 2 == 0}
-allowed = allowed.map{|a| a[:aliases][0]}
-allowed = allowed.delete_if{|a| (/-cpp/ =~ a || /-objc/ =~ a)}
-allowed = allowed.sort
+	allowed = Pygments.lexers.flatten.select.with_index{|a,i| (i+1) % 2 == 0}
+	allowed = allowed.map{|a| a[:aliases][0]}
+	allowed = allowed.delete_if{|a| (/-cpp/ =~ a || /-objc/ =~ a)}
+	allowed = allowed.sort
 %>
 
- <form role="search">
-      
-      <div id="search">
-        <table><tr>
-          <td>Lang:</td>
-          <td><%= select_tag(:lang, options_for_select(allowed, params[:lang]))%></td>
-          </tr><tr>
-          <td>
-          Description:
-          </td><td>
-          <%= text_field_tag :desc, params[:desc] %><br>
-          </td> 
-        </tr>
-      </table>
-      </div> 
+	<form role="search">
+	      
+	     
+		<table class="findForm">
+			<tr>
+		  		<td>Lang:</td>
+		  		<td><%= select_tag(:lang, options_for_select(allowed, params[:lang]))%></td>
+		  	</tr>
+			<tr>
+		  		<td>
+		  			Description:
+		  		</td>
+				<td>
+		  			<%= text_field_tag :desc, params[:desc], :class=>"desc" %><br>
+		  		</td> 
+			</tr>
+	      </table>
+	    
 
-      <div class="link3" id="search">
-      <%= submit_tag "Search", :snippet => nil %>
-      </div>
-  </form>
+	      <div class="link3">
+	      <%= submit_tag "Search", :snippet => nil %>
+	      </div>
+	</form>
 
-<!-- if we find some results -->
-<% if(@beans.length > 0) %>
-<h3>Results</h3>
-<hr/>
+	<!-- if we find some results -->
+	<% if(@beans.length > 0) %>
+	<h3>Results</h3>
+	<hr/>
 
-<table class="table">
-  <thead>
-    <tr>
-      <th>Snippet</th>
-      <th class="hidden-xs">Lang</th>
-      <th class="hidden-xs">Description</th>
-      <th class="hidden-xs">Actions</th>
-    </tr>
-  </thead>
+	<table class="table">
+	  <thead>
+	    <tr>
+	      <th>Snippet</th>
+	      <th class="hidden-xs">Lang</th>
+	      <th class="hidden-xs">Description</th>
+	      <th class="hidden-xs">Actions</th>
+	    </tr>
+	  </thead>
 
-   <tbody class="page">
+	   <tbody class="page">
 
-  <%= render @beans %>
+	  <%= render @beans %>
 
-  </tbody>
-</table>
-<%= paginate @beans %>
+	  </tbody>
+	</table>
+	<%= paginate @beans %>
 
-<div id="loader">
-</div>
+	<div id="loader">
+	</div>
 
-<% elsif(@beans.length == 0 && (params.has_key?(:lang) || params.has_key?(:desc))) %>
-<b>No results found.</b>
-<% end %>
+	<% elsif(@beans.length == 0 && (params.has_key?(:lang) || params.has_key?(:desc))) %>
+	<b>No results found.</b>
+	<% end %>

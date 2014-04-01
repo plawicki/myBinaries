@@ -52,7 +52,7 @@
         navSelector: "div.navigation",
         contentSelector: null, // rename to pageFragment
         extraScrollPx: 150,
-        itemSelector: "div.thumbnail",
+        itemSelector: "tr.post",
         animate: true,
         pathParse: undefined,
         dataType: 'html',
