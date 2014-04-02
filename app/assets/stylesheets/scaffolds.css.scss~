@@ -2,6 +2,7 @@
 .findForm
 {
 	text-align: left;
+
 }
 
 #lang
@@ -114,7 +115,6 @@ pre {
    
     font-size: 12px;
 
-    background-color: #c00;
     color: #fff;
   }
   ul li {
