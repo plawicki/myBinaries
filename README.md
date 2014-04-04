@@ -43,4 +43,4 @@ Infinite Scrolling
 		* vendor/assets/javascripts/jquery.infinitescroll.js
 		* app/assets/javascripts/beans.js.coffee
 		* app/views/beans/index.js.erb
-	* skrypty pochodzą z tutorialu [link](https://github.com/amatsuda/kaminari/wiki/How-To:-Create-Infinite-Scrolling-with-jQuery)
+	* skrypty pochodzą z tutorialu [link](https://github.com/amatsuda/kaminari/wiki/How-To:-Create-Infinite-Scrolling-with-jQuery).
