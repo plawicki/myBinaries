@@ -35,3 +35,12 @@ Detale
 	* użyta baza postgres
 	* preferowane ruby >=2.1.0
 	* rails 4.0.4
+
+Infinite Scrolling
+=======
+	* infinite scrolling jest realizowane za pomocą gemu Kaminari
+	* oraz za pomocą 3 skryptów javascript umieszczonych w plikach:
+		* vendor/assets/javascripts/jquery.infinitescroll.js
+		* app/assets/javascripts/beans.js.coffee
+		* app/views/beans/index.js.erb
+	* skrypty pochodzą z tutorialu [https://github.com/amatsuda/kaminari/wiki/How-To:-Create-Infinite-Scrolling-with-jQuery][link]
